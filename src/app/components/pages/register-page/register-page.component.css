@@ -1,0 +1,43 @@
+h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+      color: dimgrey;
+}
+
+button {
+      display: block;
+      background-color: #c92d11;
+      color: #fff;
+      border: 1px solid #c92d11;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      /* margin-top: 1rem; */
+      border-radius: 999rem;
+      opacity: 0.8;
+      margin: 1rem auto;
+}
+
+button:hover{
+      opacity: 1;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin-top: 3rem;
+}
+
+.details {
+      width: 25rem;
+}
+.login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+}
+

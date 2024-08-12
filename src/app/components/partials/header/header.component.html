@@ -1,0 +1,27 @@
+<header>
+      <div class="container">
+            <a class="logo" routerLink="/">Food Mine</a>
+            <nav>
+                  <ul>
+                        <li *ngIf="!isAuth">
+                              <a routerLink="/login">Login</a>
+                        </li>
+                        <li *ngIf="isAuth" class="menu-container">
+                              <a href="#!" routerLink="/dashboard">{{user.name}}</a>
+                              <div class="menu">
+                                    <a href="" routerLink="/profile">Profile</a>
+                                    <a href="" routerLink="/payment">Orders</a>
+                                    <a (click)="logout()">Logout</a>
+                              </div>
+                        </li>
+                        <li>
+                              <a routerLink="/cart-page">
+                                    <nz-badge [nzCount]="cartNumber">
+                                          <a class="head-example">Cart</a>
+                                    </nz-badge>
+                              </a>
+                        </li>
+                  </ul>
+            </nav>
+      </div>
+</header>

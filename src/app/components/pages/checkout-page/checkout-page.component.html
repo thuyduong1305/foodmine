@@ -1,0 +1,19 @@
+<div class="container">
+      <div class="content">
+            <h2>Order Form</h2>
+            <form action="">
+                  <text-input [control]="fc['name']" label="Name"></text-input>
+                  <text-input [control]="fc['address']" label="Address"></text-input>
+            </form>
+            <order-item-list [order]="order"></order-item-list>
+      </div>
+      <div class="map">
+            <h2>Choose Your Address On Map</h2>
+            <map [order]="order"></map>
+      </div>
+      <div class="buttons-container">
+            <button class="buttons" (click)="createOrder()">
+                  Go To Payment
+            </button>
+      </div>
+</div>

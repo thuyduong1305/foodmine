@@ -1,0 +1,98 @@
+/* Đặt chung cho body và html */
+body,
+html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+}
+
+/* Container chính */
+.container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+}
+
+/* Chi tiết của form */
+.details {
+      text-align: center;
+}
+
+.details h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+}
+
+/* Hộp chứa các trường đầu vào */
+.box {
+      margin-bottom: 20px;
+      text-align: left;
+}
+
+.box label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+}
+
+.box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+}
+
+/* Thêm hiệu ứng hover và focus cho đầu vào */
+.box input:focus {
+      border-color: #66afe9;
+      outline: none;
+      box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Nút xác nhận */
+button.primary {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+button.primary:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+}
+
+button.primary:hover:not(:disabled) {
+      background-color: #0056b3;
+}
+
+/* Thông báo lỗi */
+.error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+}
+
+.register {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}

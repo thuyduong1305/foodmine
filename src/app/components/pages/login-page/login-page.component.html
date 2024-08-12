@@ -1,0 +1,27 @@
+<div class="container">
+      <div class="details">
+            <h1>Login</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="submitUser()">
+                  <div class="box">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" formControlName="email" />
+                        <div *ngIf="errorMessageForEmail" class="error-message">
+                              {{ errorMessageForEmail }}
+                        </div>
+                  </div>
+                  <div class="box">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" formControlName="password" />
+                        <div *ngIf="errorMessageForPassword" class="error-message">
+                              {{ errorMessageForPassword }}
+                        </div>
+                  </div>
+                  <button type="submit" class="primary" [disabled]="loginForm.invalid " (ngSubmit)="submitUser()">
+                        Xác nhận
+                  </button>
+                  <div class="register">
+                        New user? &nbsp; <a routerLink="/register" [queryParams]="{returnUrl: returnUrl}">Register Here</a>
+                  </div>
+            </form>
+      </div>
+</div>

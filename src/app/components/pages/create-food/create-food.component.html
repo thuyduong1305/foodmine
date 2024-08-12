@@ -1,0 +1,39 @@
+<h2>Create Food</h2>
+
+<div class="create-food-form">
+      <form (ngSubmit)="onSubmit()">
+            <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" [(ngModel)]="food.name" name="name" required>
+            </div>
+            <div>
+                  <label for="price">Price:</label>
+                  <input type="number" id="price" [(ngModel)]="food.price" name="price" required>
+            </div>
+            <div>
+                  <label for="cookTime">Cook Time:</label>
+                  <input type="text" id="cookTime" [(ngModel)]="food.cookTime" name="cookTime" required>
+            </div>
+            <div>
+                  <label for="favorite">Favorite:</label>
+                  <input type="checkbox" id="favorite" [(ngModel)]="food.favorite" name="favorite">
+            </div>
+            <div>
+                  <label for="origins">Origins (comma separated):</label>
+                  <input type="text" id="origins" [(ngModel)]="food.origins" name="origins" required>
+            </div>
+            <div>
+                  <label for="stars">Stars:</label>
+                  <input type="number" id="stars" [(ngModel)]="food.stars" name="stars" step="0.1" required>
+            </div>
+            <div>
+                  <label for="imageUrl">Image URL:</label>
+                  <input type="text" id="imageUrl" [(ngModel)]="food.imageUrl" name="imageUrl" required>
+            </div>
+            <div>
+                  <label for="tags">Tags (comma separated):</label>
+                  <input type="text" id="tags" [(ngModel)]="food.tags" name="tags" required>
+            </div>
+            <button type="submit">Create Food</button>
+      </form>
+</div>
